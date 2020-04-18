@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+li {
+    display: block;
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: large;
+    background: white;
+}
+
+.todo-elements {
+    width: 90%;
+    max-width: 500px;
+    margin: 10px auto;
+    border: 1px solid lightgrey;
+    border-radius: 30px;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, .2);
+    box-sizing: border-box;
+    height: 100vh;
+    overflow: hidden;
+    background: #01426A;
+}
+
+.todo-elements h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.todo-elements form {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.todo-elements input {
+    display: block;
+    width: 80%;
+    margin-left: 30px;
+    padding: 15px;
+}
+
+.todo-elements button {
+    margin-right: 30px;
+    padding: 16px;
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.todo-elements button:hover {
+    background-color: lightpink;
+}
+
+.todo-elements .content {
+    color: #01426A;
+    width: 100%;
+    max-width: 500px;
+    cursor: pointer;
+}
+
+.todo-elements .content ul {
+    margin: 16px 10px;
+    padding: 5px 20px;
+}
+
+.linedecor {
+    text-decoration: line-through;
+}
+
+.todo-elements .content i {
+    position: absolute;
+    right: 37%;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:1130px) {
+    .todo-elements input {
+        padding: 10px;
+        width: 70%;
+    }
+    .todo-elements button {
+        margin-right: 30px;
+        padding: 10px;
+        font-size: x-large;
+        font-weight: 600;
+    }
+    .todo-elements .content i {
+        position: absolute;
+        right: 33%;
+    }
+}
+
+@media only screen and (max-width:750px) {
+    .todo-elements input {
+        padding: 10px;
+        width: 70%;
+    }
+    .todo-elements button {
+        margin-right: 30px;
+        padding: 10px;
+        font-size: x-large;
+        font-weight: 600;
+    }
+    .todo-elements .content ul {
+        margin: 16px 10px;
+        padding: 10px 15px;
+    }
+    .todo-elements .content i {
+        position: absolute;
+        right: 30%;
+    }
+}
+
+@media only screen and (max-width:520px) {
+    .todo-elements input {
+        margin-left: 8px;
+        padding: 5px;
+        width: 90%;
+    }
+    .todo-elements button {
+        margin-right: 10px;
+        padding: 5px;
+        font-size: x-large;
+        font-weight: 600;
+    }
+    .todo-elements .content ul {
+        padding: 10px 5px;
+        margin: 10px 5px;
+    }
+    .todo-elements .content i {
+        position: absolute;
+        right: 20%;
+    }
+}
